@@ -1,78 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>移动端</title>
+	<title>产品列表</title>
 	<script data-main="./dist/js/main" src="./lib/require.js"></script>
 	<link rel="stylesheet" type="text/css" href="dist/css/base.css">
 	<link rel="stylesheet" type="text/css" href="dist/css/index.css">
-	<link rel="stylesheet" type="text/css" href="dist/css/swiper.min.css">
 </head>
 <body>
-	<nav>
+<nav>
 		<ul class="ullist clearfix">
-			<li class="nav1"><a href="index.html"><span class="active"></span></a></li>
+			<li class="nav1"><a href="index.html"><span></span></a></li>
 			<li class="nav2"><a href="car.html"><span></span></a></li>
-			<li class="nav3"><a href="product.html"><span></span></a></li>
+			<li class="nav3"><a href="product.html"><span class="active"></span></a></li>
 			<li class="nav4"><a href="#"><span></span></a></li>
 		</ul>
 	</nav>
-	<section id="swip-bar">
-		<div class="swiper-container" id="swip-cont">
-		    <div class="swiper-wrapper">
-		        <div class="swiper-slide">
-		        	<img src="images/sliderbanner/1.jpg">
-		        	<div class="zhezhao">
-		        		<div class="mohu">
-		        			<p>微信价<span>600</span></p>
-		        			<p>这是说明这是说明这是说明这是说明这是说明这是说明</p>
-		        		</div>
-		        		<a href="###" class="buy">立即购买</a>
-		        	</div>		  						
-		        </div>
-		        <div class="swiper-slide">
-		        		<img src="images/sliderbanner/2.jpg">
-		        		<div class="zhezhao">
-		        		<div class="mohu">
-		        			<p>微信价<span>600</span></p>
-		        			<p>这是说明这是说明这是说明这是说明这是说明这是说明</p>
-		        		</div>
-		        		<a href="###" class="buy">立即购买</a>
-		        	</div>	
-		        </div>
-		        <div class="swiper-slide">
-		        		<img src="images/sliderbanner/3.jpg">
-		        		<div class="zhezhao">
-		        		<div class="mohu">
-		        			<p>微信价<span>600</span></p>
-		        			<p>这是说明这是说明</p>
-		        		</div>
-		        		<a href="###" class="buy">立即购买</a>
-		        	</div>	
-		        </div>
-		        <div class="swiper-slide">
-		        		<img src="images/sliderbanner/4.jpg">
-		        		<div class="zhezhao">
-		        		<div class="mohu">
-		        			<p>微信价600</p>
-		        			<p>这是说明这是说明</p>
-		        		</div>
-		        		<a href="###" class="buy">立即购买</a>
-		        	</div>	
-		        </div>
-		    </div>
-		     <div class="swiper-pagination"></div>
-		</div>
-	</section>
-	<section class="product">
+	<section class="product" id="product">
+	<input type="hidden" id="pagenumlength" value="1">
 		<ul>
 			<li>
 				<a href="info.html">
 					 <div class="triangle-topleft"></div>
             		 <span class="property" data_url="productinfo.html">专属</span>
 					<div class="productListleft fl">
-						<!-- <img src="images/product/product1.png"> -->
 						<canvas data-src="images/product/product1.png"></canvas>
 					</div>
 					<div class="productListright fr">
@@ -87,7 +38,6 @@
 					 <div class="triangle-topleft rexiao"></div>
             		 <span class="property" data_url="productinfo.html">专属</span>
 					<div class="productListleft fl">
-						<!-- <img src="images/product/product1.png"> -->
 						<canvas data-src="images/product/product1.png"></canvas>
 					</div>
 					<div class="productListright fr">
@@ -102,7 +52,6 @@
 				 	<div class="triangle-topleft xiangou"></div>
             		 <span class="property" data_url="productinfo.html">专属</span>
 					<div class="productListleft fl">
-						<!-- <img src="images/product/product1.png"> -->
 						<canvas data-src="images/product/product1.png"></canvas>
 					</div>
 					<div class="productListright fr">
@@ -112,8 +61,50 @@
 					</div>
 				</a>
 			</li>
+			<li>
+				<a href="info.html">
+					 <div class="triangle-topleft"></div>
+            		 <span class="property" data_url="productinfo.html">专属</span>
+					<div class="productListleft fl">
+						<canvas data-src="images/product/product1.png"></canvas>
+					</div>
+					<div class="productListright fr">
+						<h3 class="title">商品标题</h3>
+						<p>这里是商品的简介这里是商品的简介这里是商品的简介这里是商品的简介这里是商品的简介</p>
+						<div class="price">价格：<span class="price-color">&yen;500</span></div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="info.html">
+					 <div class="triangle-topleft rexiao"></div>
+            		 <span class="property" data_url="productinfo.html">专属</span>
+					<div class="productListleft fl">
+						<img src="images/product/product1.png">
+					</div>
+					<div class="productListright fr">
+						<h3 class="title">商品标题</h3>
+						<p>这里是商品的简介这里是商品的简介这里是商品的简介这里是商品的简介这里是商品的简介</p>
+						<div class="price">价格：<span class="price-color">&yen;500</span></div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="info.html">
+				 	<div class="triangle-topleft xiangou"></div>
+            		 <span class="property" data_url="productinfo.html">专属</span>
+					<div class="productListleft fl">
+						<img src="images/product/product1.png">
+					</div>
+					<div class="productListright fr">
+						<h3 class="title">商品标题</h3>
+						<p>这里是商品的简介这里是商品的简介这里是商品的简介这里是商品的简介这里是商品的简介</p>
+						<div class="price">价格：<span class="price-color">&yen;500</span></div>
+					</div>
+				</a>
+			</li>
 		</ul>
+		 <div class="loaddiv"></div>
 	</section>
-	
 </body>
 </html>

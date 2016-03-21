@@ -1,0 +1,18 @@
+html,body {margin:0; padding:0; font:10px/1.5 helvetica,arial,"Microsoft Yahei"; word-break: break-all;}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{padding:0; margin:0;}
+table,td,tr,th{font-size:10px;}
+a{text-decoration: none;}
+ol,ul {list-style:none;}
+li{list-style-type:none;}
+ a{-webkit-tap-highlight-color:transparent;}  /*这个是去除a标签在手机上的高亮*/
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+input,select {-webkit-appearance:none;outline: none;} /*这个是去除表单的默认样式*/
+img{display: block;width:100%;}
+h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight:normal;}
+address,cite,code,em,th,i{font-weight:normal; font-style:normal;}
+.clearfix{zoom:1;}
+.clearfix:after{display:block; overflow:hidden; clear:both; height:0; visibility:hidden; content:".";}
