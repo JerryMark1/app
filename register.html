@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>注册</title>
+	<script data-main="./dist/js/main" src="./lib/require.js"></script>
+	<link rel="stylesheet" type="text/css" href="dist/css/base.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/index.css">
+</head>
+<body>
+	<header class="u-header">
+		  <div class="uc_return">
+		            <div class="uc_return_l" onclick="window.history.back()"></div>
+		            <div class="uc_return_c">注册</div>
+		            <div class="uc_return_r"><a href="login.html">登录</a></div>
+		   </div>  
+	</header>
+	<section class="logging register">
+        <ul class="bgf pl12 outborder">
+            <li class="pt12 pb12 border_bottom ea">
+            <s></s>
+            <input name="mobile" type="number" placeholder="请输入您的手机号" id="login_userName" autofocus>
+            <!-- <s class="warn" id="pass1_error" style="display:none;"></s> -->
+            <div class="error-msg phone">
+                <span class="wraning"></span>
+               <em class="errorM">手机号码格式错误</em>
+               <em class="errorE">不能为空</em>
+               <em class="isu">此用户已经存在</em>
+            </div>
+            </li>
+            <li class="pt12 pb12 ea">
+            <s class="uc_logging_password"></s>
+            <input name="userpwd" type="password" placeholder="请输入您的密码" id="login_Password">
+            <!-- <s class="warn" id="pass_error" style="display:none;"></s> -->
+             <div class="error-msg pass">
+                <span class="wraning"></span>
+                <em class="errorM">密码最少3位</em>
+                 <em class="errorE">不能为空</em>
+            </div>
+            </li>
+            <li class="pt12 pb12 ea">
+            <s class="uc_logging_password"></s>
+            <input name="userpwd" type="password" placeholder="请再次输入您的密码" id="login_Passwordn">
+            <!-- <s class="warn" id="pass_error" style="display:none;"></s> -->
+             <div class="error-msg passn">
+                <span class="wraning"></span>
+                 <span class="errorM">密码不一致</span>
+                  <em class="errorE">不能为空</em>
+            </div>
+            </li>
+            <li class="pt12 pb12 ea">
+            <s class="uc_logging_password"></s>
+            <input name="userpwd" type="email" placeholder="请输入您的邮箱" id="login_email">
+            <!-- <s class="warn" id="pass_error" style="display:none;"></s> -->
+             <div class="error-msg email">
+                <span class="wraning"></span>
+                <em class="errorM">邮箱格式错误</em>
+                 <em class="errorE">不能为空</em>
+                <!-- <span class="error-tip">请</span> -->
+            </div>
+            </li>
+            
+        </ul>
+        <div class="btn_wrap" id="register_user">
+            <span class="btn">注 册</span>
+        </div>
+ </section>
+</body>
+</html>

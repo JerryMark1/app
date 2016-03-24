@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>订单状态</title>
+	<script data-main="./dist/js/main" src="./lib/require.js"></script>
+	<link rel="stylesheet" type="text/css" href="dist/css/base.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/index.css">
+</head>
+<body>
+	<nav>
+		<ul class="ullist clearfix">
+			<li class="nav1"><a href="index.html"><span></span></a></li>
+			<li class="nav2"><a href="car.html"><span></span></a></li>
+			<li class="nav3"><a href="product.html"><span></span></a></li>
+			<li class="nav4"><a href="userinfo.html"><span class="active"></span></a></li>
+		</ul>
+	</nav>
+	 <section class="myorder">      
+      <div class="topcenter">
+        <div class="userhead"> <img id="myhead" src="images/morenhead.jpg"  /> </div>
+        <div class="nipic"><p>xx</p><p class="dingd">我的订单</p></div>
+      </div>
+      <ul class="buyer_stat">
+        <li class="btn_1  active"><a href="#">待付款</a><span>待付款</span></li>
+        <li class="btn_2 "><a href="#">待发货</a><span>待发货</span></li>
+        <li class="btn_3 "><a href="#">待收货</a><span>待收货</span></li>
+        <li class="btn_4 "><a href="#">已完成</a><span>已完成</span></li>
+      </ul>
+      <!-- 待付款 -->
+      <div class="public public_active">
+       <div class="null_order" style="display: none;">
+         <div class="order_pic"></div>
+         <h4>亲， 目前没有订单信息！</h4>
+       </div>
+       <div class="order_form">
+         <p class="num">订单号: 201406101154541754</p>
+         <div class="con">
+           <p class="ware_pic"><a href="#"><img src="images/product/product1.png" height="60" width="60"></a></p>
+           <p class="ware_text"><a href="#">ipone6s</a><br><span class="attr"></span></p>
+           <p class="price">价格: <span>¥200.00</span></p>
+           <p class="amount">数量: <span>1</span></p>
+         </div>
+         <div class="con">
+           <p class="ware_pic"><a href="#"><img src="images/product/product1.png" height="60" width="60"></a></p>
+           <p class="ware_text"><a href="#">ipone6s</a><br><span class="attr"></span></p>
+           <p class="price">价格: <span>¥200.00</span></p>
+           <p class="amount">数量: <span>1</span></p>
+         </div>
+         <div class="clear"></div>
+         <div class="foot">
+           <p class="time">添加时间:2014-06-10 11:54:54</p>
+           <div class="handle">
+             <div style="float:left;">
+               订单总价: <b >¥40000.00&nbsp;&nbsp;</b>
+             </div>
+             待付款
+             <a href="#"  class="btn red">付款</a>
+             <a href="#" class="order_action_cancel"> 取消订单</a>
+              <a href="###" class="seecase">查看订单</a>
+           </div>
+         </div>
+       </div>
+       <div class="order_form">
+         <p class="num">订单号: 201406101154541754</p>
+         <div class="con">
+           <p class="ware_pic"><a href="#"><img src="images/product/product1.png" height="60" width="60"></a></p>
+           <p class="ware_text"><a href="#">iphone6s</a><br><span class="attr"></span></p>
+           <p class="price">价格: <span>¥200.00</span></p>
+           <p class="amount">数量: <span>2</span></p>
+         </div>
+         <div class="clear"></div>
+         <div class="foot">
+           <p class="time">添加时间:2014-06-10 11:54:54</p>
+           <div class="handle">
+             <div style="float:left;">
+               订单总价: <b >¥400.00&nbsp;&nbsp;</b>
+             </div>
+             待付款
+             <a href="#"  class="btn red">付款</a>
+             <a href="#" class="order_action_cancel"> 取消订单</a>
+             <a href="###" class="seecase">查看订单</a>
+           </div>
+         </div>
+       </div>
+       
+       <div class="clear"></div>
+     </div>
+
+<!-- tab2 -->
+      <div class="public">
+        <div class="null_order" >
+          <div class="order_pic"></div>
+          <h4>亲， 目前没有订单信息！</h4>
+        </div>
+        <div class="order_form" style="display:none;">
+          <p class="num">订单号: 201406101154541754</p>
+          <div class="con">
+            <p class="ware_pic"><a href="#"><img src="images/product/product1.png" height="60" width="60"></a></p>
+            <p class="ware_text"><a href="#">广联达算量软件</a><br><span class="attr"></span></p>
+            <p class="price">价格: <span>¥200.00</span></p>
+            <p class="amount">数量: <span>1</span></p>
+          </div>
+          <div class="con">
+            <p class="ware_pic"><a href="#"><img src="images/product/product1.png" height="60" width="60"></a></p>
+            <p class="ware_text"><a href="#">广联达算量软件</a><br><span class="attr"></span></p>
+            <p class="price">价格: <span>¥200.00</span></p>
+            <p class="amount">数量: <span>1</span></p>
+          </div>
+          <div class="clear"></div>
+          <div class="foot">
+            <p class="time">添加时间:2014-06-10 11:54:54</p>
+            <div class="handle">
+              <div style="float:left;">
+                订单总价: <b id="order118_order_amount">¥40000.00&nbsp;&nbsp;</b>
+              </div>
+               <a href="#" class="seecase">查看订单</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="clear"></div>
+      </div>
+
+
+      <!-- tab3 -->
+
+      <div class="public">
+        <div class="null_order" style="display: none;">
+          <div class="order_pic"></div>
+          <h4>亲， 目前没有订单信息！</h4>
+        </div>
+        <div class="order_form" >
+          <p class="num">订单号: 201406101154541754</p>
+          <div class="con">
+            <p class="ware_pic"><a href="#"><img src="images/product/product1.png" height="60" width="60"></a></p>
+            <p class="ware_text"><a href="#">广联达算量软件</a><br><span class="attr"></span></p>
+            <p class="price">价格: <span>¥200.00</span></p>
+            <p class="amount">数量: <span>1</span></p>
+          </div>
+          <div class="con">
+            <p class="ware_pic"><a href="#"><img src="images/product/product1.png" height="60" width="60"></a></p>
+            <p class="ware_text"><a href="#">广联达算量软件</a><br><span class="attr"></span></p>
+            <p class="price">价格: <span>¥200.00</span></p>
+            <p class="amount">数量: <span>1</span></p>
+          </div>
+          <div class="clear"></div>
+          <div class="foot">
+            <p class="time">添加时间:2014-06-10 11:54:54</p>
+            <div class="handle">
+              <div style="float:left;">
+                订单总价: <b id="order118_order_amount">¥40000.00&nbsp;&nbsp;</b>
+              </div>
+              <a href="#">确认收货</a>
+               <a href="#" class="seecase">查看订单</a>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="clear"></div>
+      </div>
+
+      <!-- tab4 -->
+       <div class="public">
+        <div class="null_order" style="display: none;">
+          <div class="order_pic"></div>
+          <h4>亲， 目前没有订单信息！</h4>
+        </div>
+        <div class="order_form">
+          <p class="num">订单号: 201406101154541754</p>
+          <div class="con">
+            <p class="ware_pic"><a href="#"><img src="images/product/product1.png" height="60" width="60"></a></p>
+            <p class="ware_text"><a href="#">广联达算量软件</a><br><span class="attr"></span></p>
+            <p class="price">价格: <span>¥200.00</span></p>
+            <p class="amount">数量: <span>1</span></p>
+          </div>
+          <div class="con">
+            <p class="ware_pic"><a href="#"><img src="images/product/product1.png" height="60" width="60"></a></p>
+            <p class="ware_text"><a href="#">广联达算量软件</a><br><span class="attr"></span></p>
+            <p class="price">价格: <span>¥200.00</span></p>
+            <p class="amount">数量: <span>1</span></p>
+          </div>
+          <div class="clear"></div>
+          <div class="foot">
+            <p class="time">添加时间:2014-06-10 11:54:54</p>
+            <div class="handle">
+              <div style="float:left;">
+                订单总价: <b id="order118_order_amount">¥40000.00&nbsp;&nbsp;</b>
+              </div>
+              <a href="#" class="seecase">查看订单</a>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="clear"></div>
+      </div>
+
+
+      <!-- 有商品 -->
+       <div class="particular_wrap" style="display:none">
+        <dl class="order_detail">
+          <dt class="til_font">订单详情</dt>
+          <dt>订单状态</dt>
+          <dd>待发货 </dd>
+          <dt>订单号</dt>
+          <dd>201406091022451527</dd>
+          <dt>下单时间</dt>
+          <dd>2014-06-09 10:22:45</dd>
+        </dl>
+        
+        <div class="ware_line">
+          <div class="ware">
+            <div class="ware_list">
+              <div class="ware_pic"><img src="images/product/product1.png" height="50" width="50"></div>
+              <div class="ware_text">
+                <div class="ware_text1">
+                  <a href="#">广联达算量算计</a><br>
+                  <span></span>
+                </div>
+                <div class="ware_text2">
+                  <span>数量:<strong>3</strong></span>
+                  <span>价格:<strong>¥100.00</strong></span>
+                </div>
+              </div>
+            </div><div class="ware_list">
+            <div class="ware_pic"><img src="images/product/product1.png" height="50" width="50"></div>
+            <div class="ware_text">
+              <div class="ware_text1">
+                <a href="#">广联达计价软件</a><br>
+                <span></span>
+              </div>
+              <div class="ware_text2">
+                <span>数量:<strong>1</strong></span>
+                <span>价格:<strong>¥200.00</strong></span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="transportation">
+            总价:<b>¥500.00</b>
+          </div>
+          
+          <ul class="fapiao">
+            <li>发票类型：普通发票</li>
+            <li>发票抬头： 上海兴安得力软件有限公司</li>
+          </ul>
+          
+          <ul class="order_detail_list">
+            <li>支付方式:货到付款</li>
+            <li>下单时间:2014-06-09 10:22:48</li>
+          </ul>
+          
+        </div>
+      </div>
+      <dl>
+        <dt class="til_font">物流信息</dt>
+        <dt>收货地址</dt>
+        <dd>weqweqwe, &nbsp;15788888888, 天津市市辖县静海县qwe</dd>
+      </dl>
+    </div>
+      
+      
+    </section>
+</body>
+</html>

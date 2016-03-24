@@ -1,0 +1,1 @@
+define(["jquery"],function(){return{tab:function(){$(".buyer_stat").on("click","li",function(){$(".particular_wrap").hide();var i=$(this).index();$(this).addClass("active").siblings().removeClass("active"),$(".public").hide().eq(i).show()})}}});
